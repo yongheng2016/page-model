@@ -1,0 +1,266 @@
+body,html {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	background: red;
+}
+.layout {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+ul,ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+p {	
+	font-size: 14px;
+	color: #9e9e9e;
+}
+.title {
+	text-align: center;
+}
+.title>h3 {
+	font-size: 30px;
+	font-weight: bolder;
+	color: #fff;
+}
+/*nav*/
+#nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	background: #fff;
+}
+#nav .tab>a>img {
+	margin-top: 15px;
+}
+#nav .tab>li:nth-child(2):after {
+	content: '\e638';
+	display: block;
+	font-family: 'iconfont';
+	position: absolute;
+	top: 40%;
+	left: -15px;
+}
+#nav .tab>li:nth-child(3):after {
+	content: '\e638';
+	display: block;
+	font-family: 'iconfont';
+	position: absolute;
+	top: 40%;
+	left: -15px;
+
+}
+#nav .tab>li {
+	position: relative;
+	float: right;
+	padding: 18px;
+}
+#nav .tab>li>a {
+	text-transform: uppercase;
+	color: #000;
+}
+#nav .tab li:hover .second-level{
+	display: block;
+}
+#nav .tab>li a:hover {
+	color: red;
+}
+#nav .second-level {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	padding: 20px;
+	background: #02bdd5;
+	white-space: nowrap;
+}
+#nav .second-level li {
+	margin-bottom: 10px;
+}
+#nav .second-level li a {
+	color: #fff;
+}
+/*SERVICE*/
+.about-company {
+	margin-top: 57px;
+	padding: 50px;
+	background: #02bdd5;
+	color: #fff;
+}
+.about-company>a {
+	color: #fff;
+}
+.about-company>a:before {
+	content: '\e63b';
+	display: inline;
+	font-family: 'iconfont';
+	font-size: 18px;
+}
+/*full-blog*/
+.sign1, .sign2, .sign3 {
+	position: relative;
+	top: -30px;
+	opacity: 0;
+}
+.blog-container {
+	background: #fff;
+}
+.blog-container .wrap {
+	display: flex;
+	justify-content: space-between;
+	padding: 100px 0;
+}
+.full-blog {
+	width: 720px;
+	background: #fff;
+}
+.full-blog .content {
+	margin-bottom: 50px;
+}
+.full-blog .content img {
+	width: 720px;
+	display: block;
+}
+.full-blog .content h4 {
+	margin-bottom: 10px;
+	font-size: 26px;
+}
+.full-blog .content>time, .full-blog .content>span, .full-blog .content>a {
+	font-size: 14px;
+	color: #9e9e9e;
+}
+.full-blog .content>p {
+	color: #666;
+}
+.full-blog .content .btn-readmore {
+	display: inline-block;
+	background: #fff;
+	border: 1px solid #03bdd5;
+	color: #fff;
+}
+.full-blog .content .btn-readmore a {
+	display: inline-block;
+	padding: 15px;
+	margin: .5px;
+	background: #03bdd5;
+}
+/*sidebar*/
+ .blog-container .sidebar-right .sidebar-layout {
+ 	padding: 15px;
+	margin-top: 30px;
+	border: 1px solid #ccc;
+ }
+.blog-container .sidebar-right {
+	width: 350px;
+}
+.blog-container .sidebar-right form {
+	position: relative;
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+.blog-container .sidebar-right form:after {
+	content: '\e672';
+	display: inline;
+	font-family: 'iconfont';
+	font-size: 18px;
+	position: absolute;
+	right: 14px;
+	top: 12px;
+}
+.blog-container .sidebar-right .search {
+	width: 330px;
+	font-size: 18px;
+	border: 1px solid #ccc;
+}
+.blog-container .sidebar-right .author {
+	position: relative;
+	text-align: center;
+}
+.blog-container .sidebar-right .author img {
+	max-width: 320px;
+	margin-bottom: 30px;
+}
+.blog-container .sidebar-right .author:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background: url(../images/author/author.jpg) no-repeat 0 0;
+	background-size: 100% auto;	
+	border: 3px solid #fff;
+}
+.blog-container .sidebar-right .categories .list {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0;
+	border-bottom: 1px solid #ccc;
+}
+.blog-container .sidebar-right .recent-posts .link {
+	padding: 10px 0;
+}
+.blog-container .sidebar-right .recent-posts a {
+	font-size: 14px;
+}
+.blog-container .sidebar-right .recent-posts time {
+	display: block;
+	font-size: 12px;
+	color: #aaa;
+}
+/*.blog-container .sidebar-right .recent-posts*/
+/*footer*/
+#footer {
+	padding: 80px;
+	background: #02bdd5;
+}
+#footer .title>h3 {
+	color: #fff;
+}
+#footer p {
+	color: #fff;
+}
+#footer .btn-contact {
+	margin-top: 50px;
+}
+#footer .btn-contact a {
+	padding: 15px;
+	background: #fff;
+	color: #02bdd5;
+	border-radius: 3px;
+}
+/*copyright*/
+.copyright {
+	text-align: right;
+	color: #02bdd5;
+	background: #fff;
+}
+.copyright>div {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;
+}
+.copyright span {
+	color: #000;
+}
+.icon i {
+	font-family: 'iconfont';
+	margin-left: 10px;
+	font-style: normal;
+}

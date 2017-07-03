@@ -1,0 +1,268 @@
+body,html {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	background: #fff;
+}
+.layout {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+ul,ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+p {	
+	font-size: 14px;
+	color: #9e9e9e;
+}
+.title {
+	text-align: center;
+}
+.title>h3 {
+	font-size: 30px;
+	font-weight: bolder;
+	color: #fff;
+}
+/*nav*/
+#nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	background: #fff;
+}
+#nav .tab>a>img {
+	margin-top: 15px;
+}
+#nav .tab>li:nth-child(2):after {
+	content: '\e638';
+	display: block;
+	font-family: 'iconfont';
+	position: absolute;
+	top: 40%;
+	left: -15px;
+}
+#nav .tab>li:nth-child(3):after {
+	content: '\e638';
+	display: block;
+	font-family: 'iconfont';
+	position: absolute;
+	top: 40%;
+	left: -15px;
+
+}
+#nav .tab>li {
+	position: relative;
+	float: right;
+	padding: 18px;
+}
+#nav .tab>li>a {
+	text-transform: uppercase;
+	color: #000;
+}
+#nav .tab li:hover .second-level{
+	display: block;
+}
+#nav .tab>li a:hover {
+	color: red;
+}
+#nav .second-level {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	padding: 20px;
+	background: #02bdd5;
+	white-space: nowrap;
+}
+#nav .second-level li {
+	margin-bottom: 10px;
+}
+#nav .second-level li a {
+	color: #fff;
+}
+/*SERVICE*/
+.about-company {
+	margin-top: 57px;
+	padding: 50px;
+	background: #02bdd5;
+	color: #fff;
+}
+.about-company>a {
+	color: #fff;
+}
+.about-company>a:before {
+	content: '\e63b';
+	display: inline;
+	font-family: 'iconfont';
+	font-size: 18px;
+}
+/*contact*/
+.sign1 {
+	position: relative;
+	right: -500px;
+	opacity: 0;
+}
+.contact {
+	overflow: hidden;
+	position: relative;
+	left: 0;
+	padding: 100px 0;
+	background: #fff;
+}
+.contact .container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.contact .contact-form {
+	position: relative;
+	overflow: hidden;
+	width: 550px;
+}
+.contact .contact-form .selector {
+	opacity: 0;
+	padding: 5px 10px;
+
+}
+.contact .contact-form .selector select {
+	border: 0;
+	outline: none;
+	color: red;
+}
+.contact h4 {
+	font-size: 24px;
+}
+.contact .contact-form>p {
+	padding-bottom: 20px;
+}
+.icon {
+       width: 1em; height: 1em;
+       vertical-align: -0.15em;
+       fill: currentColor;
+       /*overflow: hidden;*/
+    }
+.contact .contact-form form input {
+	padding: 10px;
+	width: 516px;
+	display: block;
+	/*height: 35px;*/
+	/*font-size: 16px;*/
+	/*margin-bottom: 20px;*/
+	border: 1px solid #ccc;
+}
+.contact .contact-form form .wram {
+	display: block;
+	color: red;
+	border: 0;
+	padding: 5px 10px;
+	margin: 0;
+	background-color: #fff;
+}
+.contact .contact-form form textarea {
+	padding: 10px;
+	width: 516px;
+	/*font-size: 16px;*/
+	font-family: simsum;
+	border: 1px solid #ccc;
+	resize: none;
+	overflow: auto;
+}
+.contact .contact-form input[type='submit'] {
+	width: 120px;
+	margin-top: 15px;
+	border-radius: 3px;
+	color: #fff;
+	background: #02bdd5;
+}
+
+.contact .find-us {
+	width: 530px;
+}
+.contact .find-us>p {
+	margin-bottom: 32px;
+}
+.contact .find-us .video {
+	width: 530px;
+	height: 394px;
+	font-size: 100px;
+	color: #eee;
+	line-height: 394px;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+/*information*/
+.information {
+	padding-bottom: 100px;
+	background: #fff;
+}
+.information .list {
+	display: flex;
+	justify-content: space-between;
+}
+.information .list li {
+	width: 200px;
+	padding: 45px 25px;
+	text-align: center;
+	background: #f7f7f7;
+}
+.information .list li i {
+	font-family: 'iconfont';
+	font-style: normal;
+	color: #02bdd5;
+	font-size: 40px;
+}
+/*footer*/
+#footer {
+	padding: 80px;
+	background: #02bdd5;
+}
+#footer .title>h3 {
+	color: #fff;
+}
+#footer p {
+	color: #fff;
+}
+#footer .btn-contact {
+	margin-top: 50px;
+}
+#footer .btn-contact a {
+	padding: 15px;
+	background: #fff;
+	color: #02bdd5;
+	border-radius: 3px;
+}
+/*copyright*/
+.copyright {
+	text-align: right;
+	color: #02bdd5;
+	background: #fff;
+}
+.copyright>div {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;
+}
+.copyright span {
+	color: #000;
+}
+.copyright .icon {
+	width: 200px;
+}
+.icon i {
+	font-family: 'iconfont';
+	margin-left: 10px;
+	font-style: normal;
+}
